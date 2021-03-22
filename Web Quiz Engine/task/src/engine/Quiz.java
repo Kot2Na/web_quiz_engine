@@ -1,25 +1,16 @@
 package engine;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
 public class Quiz {
+    private int id;
     private String title;
     private String text;
     private String[] options;
-
-    public Quiz (String title, String text, String[] options) {
-        this.title = title;
-        this.text = text;
-        this.options = options;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public String[] getOptions() {
-        return options;
-    }
 }
