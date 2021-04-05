@@ -1,14 +1,10 @@
 package engine;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
-@AllArgsConstructor
+@Data
 public class ResponseQuiz {
-    private boolean success;
-    private String feedback;
+    @NonNull private boolean success;
+    @NonNull private String feedback;
 }
