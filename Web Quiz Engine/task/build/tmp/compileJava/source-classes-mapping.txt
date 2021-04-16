@@ -8,5 +8,7 @@ engine/ResponseQuiz.java
  engine.ResponseQuiz
 engine/QuizRestController.java
  engine.QuizRestController
+engine/QuizRepository.java
+ engine.QuizRepository
 engine/Quiz.java
  engine.Quiz

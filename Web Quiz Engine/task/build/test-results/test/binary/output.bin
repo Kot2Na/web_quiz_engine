@@ -9,22 +9,36 @@
 ) =========|_|==============|___/=/_/_/_/
 + :: Spring Boot ::        (v2.2.2.RELEASE)
 
-Ú2021-04-05 14:27:39.322  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 7921 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)
-•2021-04-05 14:27:39.325  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
-ë2021-04-05 14:27:40.380  INFO 7921 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-~2021-04-05 14:27:40.390  INFO 7921 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-î2021-04-05 14:27:40.390  INFO 7921 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-ó2021-04-05 14:27:40.459  INFO 7921 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-§2021-04-05 14:27:40.459  INFO 7921 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1095 ms
-õ2021-04-05 14:27:40.729  INFO 7921 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-ö2021-04-05 14:27:40.920  INFO 7921 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-†2021-04-05 14:27:40.972  INFO 7921 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-£2021-04-05 14:27:40.976  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 6.909 seconds (JVM running for 7.534)
-û2021-04-05 14:27:41.326  INFO 7921 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-ç2021-04-05 14:27:41.328  INFO 7921 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ö2021-04-05 14:27:41.334  INFO 7921 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+Ù2021-04-16 09:37:58.276  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 43034 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)
+¶2021-04-16 09:37:58.279  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+°2021-04-16 09:37:59.231  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+∫2021-04-16 09:37:59.278  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.
+ä2021-04-16 09:37:59.586  INFO 43034 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+í2021-04-16 09:37:59.817  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2021-04-16 09:37:59.827  INFO 43034 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2021-04-16 09:37:59.828  INFO 43034 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+ò2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1653 ms
+Ä2021-04-16 09:38:00.103  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2021-04-16 09:38:00.373  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+ª2021-04-16 09:38:00.381  INFO 43034 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'
+ü2021-04-16 09:38:00.615  INFO 43034 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ç2021-04-16 09:38:00.717  INFO 43034 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+û2021-04-16 09:38:00.859  INFO 43034 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ü2021-04-16 09:38:00.982  INFO 43034 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Ÿ2021-04-16 09:38:01.612  INFO 43034 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2021-04-16 09:38:01.618  INFO 43034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+ù2021-04-16 09:38:01.838  WARN 43034 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ú2021-04-16 09:38:01.968  INFO 43034 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+õ2021-04-16 09:38:02.177  INFO 43034 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+°2021-04-16 09:38:02.228  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+§2021-04-16 09:38:02.231  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 4.309 seconds (JVM running for 5.128)
+ü2021-04-16 09:38:02.533  INFO 43034 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2021-04-16 09:38:02.534  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2021-04-16 09:38:02.541  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
 [1;31m
 Start test 2[0m
+false
 [1;31m
 Start test 3[0m
 [1;31m
@@ -33,6 +47,7 @@
 Start test 5[0m
 [1;31m
 Start test 6[0m
+false
 [1;31m
 Start test 7[0m
 [1;31m
@@ -57,207 +72,9 @@
 Start test 17[0m
 [1;31m
 Start test 18[0m
-≤2021-04-05 14:27:41.651  WARN 7921 --- [io-8889-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 4, column: 4]]
 [1;31m
 Start test 19[0m
-≤2021-04-05 14:27:41.672  WARN 7921 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
-[1;31m
-Start test 20[0m
-≤2021-04-05 14:27:41.678  WARN 7921 --- [nio-8889-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 4, column: 4]]
-[1;31m
-Start test 21[0m
-≤2021-04-05 14:27:41.687  WARN 7921 --- [nio-8889-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
-[1;31m
-Start test 22[0m
-[1;31m
-Start test 23[0m
-≤2021-04-05 14:27:41.708  WARN 7921 --- [nio-8889-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
-[1;31m
-Start test 24[0m
-≤2021-04-05 14:27:41.714  WARN 7921 --- [nio-8889-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
-9 at [Source: (PushbackInputStream); line: 5, column: 4]]
-[1;31m
-Start test 25[0m
-[1;31m
-Start test 26[0m
-[1;31m
-Start test 27[0m
-[1;31m
-Start test 28[0m
-[1;31m
-Start test 29[0m
-[1;31m
-Start test 30[0m
-[1;31m
-Start test 31[0m
-[1;31m
-Start test 32[0m
-[1;31m
-Start test 33[0m
-[1;31m
-Start test 34[0m
-[1;31m
-Start test 35[0m
-[1;31m
-Start test 36[0m
-[1;31m
-Start test 37[0m
-[1;31m
-Start test 38[0m
-[1;31m
-Start test 39[0m
-[1;31m
-Start test 40[0m
-[1;31m
-Start test 41[0m
-[1;31m
-Start test 42[0m
-[1;31m
-Start test 43[0m
-[1;31m
-Start test 44[0m
-[1;31m
-Start test 45[0m
-[1;31m
-Start test 46[0m
-[1;31m
-Start test 47[0m
-[1;31m
-Start test 48[0m
-[1;31m
-Start test 49[0m
-[1;31m
-Start test 50[0m
-[1;31m
-Start test 51[0m
-[1;31m
-Start test 52[0m
-[1;31m
-Start test 53[0m
-[1;31m
-Start test 54[0m
-[1;31m
-Start test 55[0m
-[1;31m
-Start test 56[0m
-[1;31m
-Start test 57[0m
-[1;31m
-Start test 58[0m
-[1;31m
-Start test 59[0m
-[1;31m
-Start test 60[0m
-[1;31m
-Start test 61[0m
-[1;31m
-Start test 62[0m
-[1;31m
-Start test 63[0m
-[1;31m
-Start test 64[0m
-[1;31m
-Start test 65[0m
-[1;31m
-Start test 66[0m
-[1;31m
-Start test 67[0m
-[1;31m
-Start test 68[0m
-[1;31m
-Start test 69[0m
-[1;31m
-Start test 70[0m
-[1;31m
-Start test 71[0m
-[1;31m
-Start test 72[0m
-[1;31m
-Start test 73[0m
-[1;31m
-Start test 74[0m
-[1;31m
-Start test 75[0m
-[1;31m
-Start test 76[0m
-[1;31m
-Start test 77[0m
-[1;31m
-Start test 78[0m
-[1;31m
-Start test 79[0m
-[1;31m
-Start test 80[0m
-[1;31m
-Start test 81[0m
-[1;31m
-Start test 82[0m
-[1;31m
-Start test 83[0m
-[1;31m
-Start test 84[0m
-[1;31m
-Start test 85[0m
-[1;31m
-Start test 86[0m
-[1;31m
-Start test 87[0m
-[1;31m
-Start test 88[0m
-[1;31m
-Start test 89[0m
-[1;31m
-Start test 90[0m
-[1;31m
-Start test 91[0m
-[1;31m
-Start test 92[0m
-[1;31m
-Start test 93[0m
-[1;31m
-Start test 94[0m
-[1;31m
-Start test 95[0m
-[1;31m
-Start test 96[0m
-[1;31m
-Start test 97[0m
-[1;31m
-Start test 98[0m
-[1;31m
-Start test 99[0m
-[1;31m
-Start test 100[0m
-[1;31m
-Start test 101[0m
-[1;31m
-Start test 102[0m
-[1;31m
-Start test 103[0m
-[1;31m
-Start test 104[0m
-[1;31m
-Start test 105[0m
-[1;31m
-Start test 106[0m
-[1;31m
-Start test 107[0m
-[1;31m
-Start test 108[0m
-[1;31m
-Start test 109[0m
-[1;31m
-Start test 110[0m
-[1;31m
-Start test 111[0m
-[1;31m
-Start test 112[0m
-[1;31m
-Start test 113[0m
-[1;31m
-Start test 114[0m
+ù2021-04-16 09:38:03.533  INFO 43034 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+•2021-04-16 09:38:03.534  INFO 43034 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ä2021-04-16 09:38:03.537  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+à2021-04-16 09:38:03.733  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

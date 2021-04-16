@@ -1,7 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.WebQuizEngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-05T11:27:33" hostname="CAB-WSM-0012018" time="8.247">
+<testsuite name="tests.WebQuizEngineTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-04-16T06:37:57" hostname="CAB-WSM-0012018" time="16.314">
   <properties/>
-  <testcase name="start" classname="tests.WebQuizEngineTest" time="8.247"/>
+  <testcase name="start" classname="tests.WebQuizEngineTest" time="16.314">
+    <failure message="java.lang.AssertionError: Unexpected error in test #19&#10;&#10;We have recorded this bug and will fix it soon.&#10;&#10;Submitted via IDE&#10;&#10;OS Mac OS X&#10;Java 11.0.10&#10;Vendor AdoptOpenJDK&#10;Testing library version 8&#10;&#10;org.hyperskill.hstest.exception.outcomes.UnexpectedError: Cannot stop Spring application, port is not freed&#10;&#9;at org.hyperskill.hstest.stage.SpringTest.stopSpring(SpringTest.java:165)&#10;&#9;at org.hyperskill.hstest.stage.SpringTest.reloadSpring(SpringTest.java:171)&#10;&#9;at tests.WebQuizEngineTest.reloadServer(WebQuizEngineTest.java:405)&#10;&#9;at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$null$2(DynamicTesting.java:281)&#10;&#9;at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$null$0(DynamicTesting.java:244)&#10;&#9;at org.hyperskill.hstest.testing.runner.SpringApplicationRunner.test(SpringApplicationRunner.java:43)&#10;&#9;at org.hyperskill.hstest.testing.TestRun.test(TestRun.java:87)&#10;&#9;at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:110)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#10;&#9;at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#10;&#9;at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#10;&#9;at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#10;&#9;at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#10;&#9;at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#10;&#9;at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#10;&#9;at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:115)&#10;&#9;at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)&#10;&#9;at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)&#10;&#9;at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)&#10;&#9;at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)&#10;&#9;at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)&#10;&#9;at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)&#10;&#9;at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)&#10;&#9;at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)&#10;&#9;at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)&#10;&#9;at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#10;&#9;at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)&#10;&#9;at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)&#10;&#9;at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)&#10;&#9;at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)&#10;&#9;at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)&#10;&#9;at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)&#10;&#9;at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)&#10;&#9;at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)&#10;&#9;at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)&#10;&#9;at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)&#10;&#9;at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)&#10;&#9;at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#10;&#9;at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)&#10;&#9;at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)&#10;&#9;at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)&#10;&#9;at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)&#10;&#9;at com.sun.proxy.$Proxy2.stop(Unknown Source)&#10;&#9;at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;&#9;at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#10;&#9;at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)&#10;&#9;at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)&#10;&#9;at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)&#10;&#9;at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)&#10;&#9;at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)&#10;&#9;at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)&#10;&#9;at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)&#10;&#9;at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)&#10;&#9;at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)&#10;&#9;at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)&#10;&#9;at java.base/java.lang.Thread.run(Thread.java:834)&#10;&#10;Please find below the output of your program during this failed test.&#10;&#10;---&#10;&#10;&#10;  .   ____          _            __ _ _&#10; /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \&#10;( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \&#10; \\/  ___)| |_)| | | | | || (_| |  ) ) ) )&#10;  '  |____| .__|_| |_|_| |_\__, | / / / /&#10; =========|_|==============|___/=/_/_/_/&#10; :: Spring Boot ::        (v2.2.2.RELEASE)&#10;&#10;2021-04-16 09:37:58.276  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 43034 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)&#10;2021-04-16 09:37:58.279  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default&#10;2021-04-16 09:37:59.231  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.&#10;2021-04-16 09:37:59.278  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.&#10;2021-04-16 09:37:59.586  INFO 43034 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)&#10;2021-04-16 09:37:59.817  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)&#10;2021-04-16 09:37:59.827  INFO 43034 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]&#10;2021-04-16 09:37:59.828  INFO 43034 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]&#10;2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext&#10;2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1653 ms&#10;2021-04-16 09:38:00.103  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...&#10;2021-04-16 09:38:00.373  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.&#10;2021-04-16 09:38:00.381  INFO 43034 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'&#10;2021-04-16 09:38:00.615  INFO 43034 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]&#10;2021-04-16 09:38:00.717  INFO 43034 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}&#10;2021-04-16 09:38:00.859  INFO 43034 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}&#10;2021-04-16 09:38:00.982  INFO 43034 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect&#10;2021-04-16 09:38:01.612  INFO 43034 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]&#10;2021-04-16 09:38:01.618  INFO 43034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'&#10;2021-04-16 09:38:01.838  WARN 43034 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning&#10;2021-04-16 09:38:01.968  INFO 43034 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'&#10;2021-04-16 09:38:02.177  INFO 43034 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'&#10;2021-04-16 09:38:02.228  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''&#10;2021-04-16 09:38:02.231  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 4.309 seconds (JVM running for 5.128)&#10;2021-04-16 09:38:02.533  INFO 43034 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'&#10;2021-04-16 09:38:02.534  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'&#10;2021-04-16 09:38:02.541  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms&#10;false&#10;false&#10;2021-04-16 09:38:03.533  INFO 43034 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'&#10;2021-04-16 09:38:03.534  INFO 43034 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'&#10;2021-04-16 09:38:03.537  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...&#10;2021-04-16 09:38:03.733  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed." type="java.lang.AssertionError">java.lang.AssertionError: Unexpected error in test #19
+
+We have recorded this bug and will fix it soon.
+
+Submitted via IDE
+
+OS Mac OS X
+Java 11.0.10
+Vendor AdoptOpenJDK
+Testing library version 8
+
+org.hyperskill.hstest.exception.outcomes.UnexpectedError: Cannot stop Spring application, port is not freed
+	at org.hyperskill.hstest.stage.SpringTest.stopSpring(SpringTest.java:165)
+	at org.hyperskill.hstest.stage.SpringTest.reloadSpring(SpringTest.java:171)
+	at tests.WebQuizEngineTest.reloadServer(WebQuizEngineTest.java:405)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting.lambda$null$2(DynamicTesting.java:281)
+	at org.hyperskill.hstest.dynamic.input.DynamicTesting$1DynamicTestElement.lambda$null$0(DynamicTesting.java:244)
+	at org.hyperskill.hstest.testing.runner.SpringApplicationRunner.test(SpringApplicationRunner.java:43)
+	at org.hyperskill.hstest.testing.TestRun.test(TestRun.java:87)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Please find below the output of your program during this failed test.
+
+---
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2021-04-16 09:37:58.276  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 43034 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)
+2021-04-16 09:37:58.279  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+2021-04-16 09:37:59.231  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-16 09:37:59.278  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.
+2021-04-16 09:37:59.586  INFO 43034 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-16 09:37:59.817  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2021-04-16 09:37:59.827  INFO 43034 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 09:37:59.828  INFO 43034 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1653 ms
+2021-04-16 09:38:00.103  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-16 09:38:00.373  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-16 09:38:00.381  INFO 43034 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'
+2021-04-16 09:38:00.615  INFO 43034 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-16 09:38:00.717  INFO 43034 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-04-16 09:38:00.859  INFO 43034 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-16 09:38:00.982  INFO 43034 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-16 09:38:01.612  INFO 43034 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-16 09:38:01.618  INFO 43034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-16 09:38:01.838  WARN 43034 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-16 09:38:01.968  INFO 43034 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 09:38:02.177  INFO 43034 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-04-16 09:38:02.228  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2021-04-16 09:38:02.231  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 4.309 seconds (JVM running for 5.128)
+2021-04-16 09:38:02.533  INFO 43034 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 09:38:02.534  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 09:38:02.541  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+false
+false
+2021-04-16 09:38:03.533  INFO 43034 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-16 09:38:03.534  INFO 43034 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-16 09:38:03.537  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-16 09:38:03.733  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.hyperskill.hstest.stage.StageTest.start(StageTest.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:40)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:71)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:133)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</failure>
+  </testcase>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 
@@ -13,22 +218,36 @@ Start test 1?[0m
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2021-04-05 14:27:39.322  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 7921 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)
-2021-04-05 14:27:39.325  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
-2021-04-05 14:27:40.380  INFO 7921 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
-2021-04-05 14:27:40.390  INFO 7921 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-04-05 14:27:40.390  INFO 7921 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2021-04-05 14:27:40.459  INFO 7921 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-04-05 14:27:40.459  INFO 7921 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1095 ms
-2021-04-05 14:27:40.729  INFO 7921 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-04-05 14:27:40.920  INFO 7921 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2021-04-05 14:27:40.972  INFO 7921 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
-2021-04-05 14:27:40.976  INFO 7921 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 6.909 seconds (JVM running for 7.534)
-2021-04-05 14:27:41.326  INFO 7921 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-04-05 14:27:41.328  INFO 7921 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-04-05 14:27:41.334  INFO 7921 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-04-16 09:37:58.276  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine on CAB-WSM-0012018 with PID 43034 (started by a19023522 in /Users/a19023522/Intership/Hyper_skill/Web Quiz Engine/task)
+2021-04-16 09:37:58.279  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to default profiles: default
+2021-04-16 09:37:59.231  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-16 09:37:59.278  INFO 43034 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38ms. Found 1 JPA repository interfaces.
+2021-04-16 09:37:59.586  INFO 43034 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-16 09:37:59.817  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2021-04-16 09:37:59.827  INFO 43034 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-16 09:37:59.828  INFO 43034 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-16 09:37:59.973  INFO 43034 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1653 ms
+2021-04-16 09:38:00.103  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-16 09:38:00.373  INFO 43034 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-16 09:38:00.381  INFO 43034 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../quizdb'
+2021-04-16 09:38:00.615  INFO 43034 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-16 09:38:00.717  INFO 43034 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2021-04-16 09:38:00.859  INFO 43034 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-04-16 09:38:00.982  INFO 43034 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-04-16 09:38:01.612  INFO 43034 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-16 09:38:01.618  INFO 43034 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-16 09:38:01.838  WARN 43034 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-16 09:38:01.968  INFO 43034 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-16 09:38:02.177  INFO 43034 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2021-04-16 09:38:02.228  INFO 43034 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2021-04-16 09:38:02.231  INFO 43034 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 4.309 seconds (JVM running for 5.128)
+2021-04-16 09:38:02.533  INFO 43034 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-16 09:38:02.534  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-16 09:38:02.541  INFO 43034 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
 ?[1;31m
 Start test 2?[0m
+false
 ?[1;31m
 Start test 3?[0m
 ?[1;31m
@@ -37,6 +256,7 @@ Start test 4?[0m
 Start test 5?[0m
 ?[1;31m
 Start test 6?[0m
+false
 ?[1;31m
 Start test 7?[0m
 ?[1;31m
@@ -61,210 +281,12 @@ Start test 16?[0m
 Start test 17?[0m
 ?[1;31m
 Start test 18?[0m
-2021-04-05 14:27:41.651  WARN 7921 --- [io-8889-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 4, column: 4]]
 ?[1;31m
 Start test 19?[0m
-2021-04-05 14:27:41.672  WARN 7921 --- [nio-8889-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 5, column: 4]]
-?[1;31m
-Start test 20?[0m
-2021-04-05 14:27:41.678  WARN 7921 --- [nio-8889-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 4, column: 4]]
-?[1;31m
-Start test 21?[0m
-2021-04-05 14:27:41.687  WARN 7921 --- [nio-8889-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 5, column: 4]]
-?[1;31m
-Start test 22?[0m
-?[1;31m
-Start test 23?[0m
-2021-04-05 14:27:41.708  WARN 7921 --- [nio-8889-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 5, column: 4]]
-?[1;31m
-Start test 24?[0m
-2021-04-05 14:27:41.714  WARN 7921 --- [nio-8889-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries
- at [Source: (PushbackInputStream); line: 5, column: 4]]
-?[1;31m
-Start test 25?[0m
-?[1;31m
-Start test 26?[0m
-?[1;31m
-Start test 27?[0m
-?[1;31m
-Start test 28?[0m
-?[1;31m
-Start test 29?[0m
-?[1;31m
-Start test 30?[0m
-?[1;31m
-Start test 31?[0m
-?[1;31m
-Start test 32?[0m
-?[1;31m
-Start test 33?[0m
-?[1;31m
-Start test 34?[0m
-?[1;31m
-Start test 35?[0m
-?[1;31m
-Start test 36?[0m
-?[1;31m
-Start test 37?[0m
-?[1;31m
-Start test 38?[0m
-?[1;31m
-Start test 39?[0m
-?[1;31m
-Start test 40?[0m
-?[1;31m
-Start test 41?[0m
-?[1;31m
-Start test 42?[0m
-?[1;31m
-Start test 43?[0m
-?[1;31m
-Start test 44?[0m
-?[1;31m
-Start test 45?[0m
-?[1;31m
-Start test 46?[0m
-?[1;31m
-Start test 47?[0m
-?[1;31m
-Start test 48?[0m
-?[1;31m
-Start test 49?[0m
-?[1;31m
-Start test 50?[0m
-?[1;31m
-Start test 51?[0m
-?[1;31m
-Start test 52?[0m
-?[1;31m
-Start test 53?[0m
-?[1;31m
-Start test 54?[0m
-?[1;31m
-Start test 55?[0m
-?[1;31m
-Start test 56?[0m
-?[1;31m
-Start test 57?[0m
-?[1;31m
-Start test 58?[0m
-?[1;31m
-Start test 59?[0m
-?[1;31m
-Start test 60?[0m
-?[1;31m
-Start test 61?[0m
-?[1;31m
-Start test 62?[0m
-?[1;31m
-Start test 63?[0m
-?[1;31m
-Start test 64?[0m
-?[1;31m
-Start test 65?[0m
-?[1;31m
-Start test 66?[0m
-?[1;31m
-Start test 67?[0m
-?[1;31m
-Start test 68?[0m
-?[1;31m
-Start test 69?[0m
-?[1;31m
-Start test 70?[0m
-?[1;31m
-Start test 71?[0m
-?[1;31m
-Start test 72?[0m
-?[1;31m
-Start test 73?[0m
-?[1;31m
-Start test 74?[0m
-?[1;31m
-Start test 75?[0m
-?[1;31m
-Start test 76?[0m
-?[1;31m
-Start test 77?[0m
-?[1;31m
-Start test 78?[0m
-?[1;31m
-Start test 79?[0m
-?[1;31m
-Start test 80?[0m
-?[1;31m
-Start test 81?[0m
-?[1;31m
-Start test 82?[0m
-?[1;31m
-Start test 83?[0m
-?[1;31m
-Start test 84?[0m
-?[1;31m
-Start test 85?[0m
-?[1;31m
-Start test 86?[0m
-?[1;31m
-Start test 87?[0m
-?[1;31m
-Start test 88?[0m
-?[1;31m
-Start test 89?[0m
-?[1;31m
-Start test 90?[0m
-?[1;31m
-Start test 91?[0m
-?[1;31m
-Start test 92?[0m
-?[1;31m
-Start test 93?[0m
-?[1;31m
-Start test 94?[0m
-?[1;31m
-Start test 95?[0m
-?[1;31m
-Start test 96?[0m
-?[1;31m
-Start test 97?[0m
-?[1;31m
-Start test 98?[0m
-?[1;31m
-Start test 99?[0m
-?[1;31m
-Start test 100?[0m
-?[1;31m
-Start test 101?[0m
-?[1;31m
-Start test 102?[0m
-?[1;31m
-Start test 103?[0m
-?[1;31m
-Start test 104?[0m
-?[1;31m
-Start test 105?[0m
-?[1;31m
-Start test 106?[0m
-?[1;31m
-Start test 107?[0m
-?[1;31m
-Start test 108?[0m
-?[1;31m
-Start test 109?[0m
-?[1;31m
-Start test 110?[0m
-?[1;31m
-Start test 111?[0m
-?[1;31m
-Start test 112?[0m
-?[1;31m
-Start test 113?[0m
-?[1;31m
-Start test 114?[0m
+2021-04-16 09:38:03.533  INFO 43034 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-16 09:38:03.534  INFO 43034 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-16 09:38:03.537  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-16 09:38:03.733  INFO 43034 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
